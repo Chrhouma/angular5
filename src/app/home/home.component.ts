@@ -27,8 +27,8 @@ import { DataService } from '../data.service';
   })
 export class HomeComponent implements OnInit {
 itemCount: number = 4;
-  btnText: string = 'Add an item';
-  goaltext: string = 'My first life goal';
+  btnText: string = 'Search';
+  goaltext: string = 'find by name';
   goals = [];
   constructor(private _data: DataService) { }
 
@@ -38,15 +38,20 @@ itemCount: number = 4;
     this.itemCount = this.goals.length;
     this._data.changeGoal(this.goals);
   }
-  addItem() {
-    this.goals.push(this.goaltext);
-    this.goaltext = '';
-    this.itemCount = this.goals.length;
-    this._data.changeGoal(this.goals);
+  //to do methode pour la recherche par nom
+  searchByname() {
+//    this.goals.push(this.goaltext);
+//    this.goaltext = '';
+//    this.itemCount = this.goals.length;
+//    this._data.changeGoal(this.goals);
       }
-  removeItem(i) {
-    this.goals.splice(i, 1);
-    this._data.changeGoal(this.goals);
+  
+  //la réderection vers la page du domaine
+  gotoPage(i) {
+    //this.goals.splice(i, 1);
+   // this.goaltext;
+   document.location.href = '/domotique';
+  //this._data.changeGoal(this.goals);
   }
 
 }

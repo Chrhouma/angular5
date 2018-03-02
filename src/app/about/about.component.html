@@ -1,11 +1,25 @@
 <p> 
 
-this is what I'm all about. <a href="" (click)="sendMeHome()"><strong>Take me back</strong></a>
+All Devices. <a href="" (click)="sendMeHome()"><strong>Take me back</strong></a>
 </p>
 <ul>
 
 
-<li *ngFor="let goal of goals">
+<table>
+	<thead>
+		<tr>
+		 <th>Object</th>
+		 <th>Mesure</th>
+		 <th>Unite</th>
+		 <th>Localisation</th>
+		</tr>
+	</thead>
+	<tbody>
+<tr *ngFor="let goal of goals">
 {{goal}}
-</li>
+</tr>
+</tbody>
+</table>
+
+
 </ul>

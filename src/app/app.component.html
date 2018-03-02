@@ -1,8 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
 <ul>
 <li><a routerLink="">HOME</a></li>
-<li><a routerLink="about/48">ABOUT</a></li>
+<li><a routerLink="about">Devices</a></li>
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+
+
 </ul>
 
 <router-outlet></router-outlet>

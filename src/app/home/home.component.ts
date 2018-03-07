@@ -45,6 +45,9 @@ itemCount: number = 4;
 //    this.itemCount = this.goals.length;
 //    this._data.changeGoal(this.goals);
       }
+  searchBytemperature(){
+     document.location.href = '/objets/temperature';
+  }
   
   //la réderection vers la page du domaine
   gotoPage(i) {

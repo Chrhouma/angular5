@@ -2,16 +2,26 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import {HomeComponent} from './home/home.component';
-import {AboutComponent} from './about/about.component';
+import {ObjetComponent} from './objet/objet.component';
+import {DomotiqueComponent} from './domotique/domotique.component';
+import {TemperatureComponent} from './temperature/temperature.component';
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
   },
    {
-    path: 'about',
-    component: AboutComponent
-  }
+    path: 'objets',
+    component: ObjetComponent
+  },
+   {
+    path: 'domotique',
+     component: DomotiqueComponent
+   },
+    {
+    path: 'objets/temperature',
+     component: TemperatureComponent
+   }
 ];
 
 

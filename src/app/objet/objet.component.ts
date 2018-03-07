@@ -1,18 +1,16 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute  } from '@angular/router';
+import { Router } from '@angular/router';
+import { DataService } from '../data.service';
+import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
-import { ActivatedRoute, Router } from '@angular/router';
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-objet',
+  templateUrl: './objet.component.html',
+  styleUrls: ['./objet.component.css']
 })
-
-export class AppComponent implements OnInit {
-  lat: number = 51.678418;
-  lng: number = 7.809007;
-  title = 'app';
- devices: any;
+export class ObjetComponent implements OnInit {
+  devices: any;
   constructor(private httpClient: HttpClient, private route: ActivatedRoute, private router: Router) { }
   ngOnInit() {
     //  this._data.goal.subscribe(res => this.goals = res);
@@ -23,4 +21,8 @@ export class AppComponent implements OnInit {
       }
   );
       }
+  sendMeHome() {
+    this.router.navigate(['home']);
+  }
+
 }

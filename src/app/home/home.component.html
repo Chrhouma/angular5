@@ -1,11 +1,15 @@
+<html>
+<meta charset="UTF-8">
 <div class="container color-dark">
 	<div class="col">
 		<p> Find Device </p>
 	</div>
 	<div class="col">
 		<p> Domaines({{itemCount}})</p>
-		</div>
+	</div>
 </div>
+
+
 
 <div class="container color-light" [@goals]="goals.length">
 	<div class="col">
@@ -14,11 +18,22 @@
 		<form>
 		
 		<input type="text" class="txt" name="item" placeholder="name"[(ngModel)]="goaltext">
+		
+	  		<select class="col1" name="menu_typeDemesure">
+	  			 <option>-ALL-</option>
+         		 <option>Température</option>
+         		 <option>Son</option>
+         		 <option >Humidité</option>
+         		 <option >Poussière</option>
+         		 <option >Lumière</option>
+     		</select>
+ 
 	
-		<input type="submit" class="btn" [value]="btnText" (click)="searchByname()">
+		<input type="submit" class="btn" [value]="btnText" (click)="searchBytemperature()">
 		</form>
 	
 	</div>
+	
 	<div class="col">
 		<p class="life-container" *ngFor="let goal of goals; let i=index"(click)="gotoPage(i)"> 
 		 {{ goal }}
@@ -26,6 +41,9 @@
 		</p>
 	</div>
 	
+	
+	
 
 
 </div>
+</html>

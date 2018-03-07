@@ -1,0 +1,50 @@
+<html>
+<meta charset="UTF-8">
+<p> 
+
+All Devices. <a href="" (click)="sendMeHome()"><strong>Take me back</strong></a>
+</p>
+
+
+
+<table class="rwd-table">
+	<tr>
+	 
+	 <th>Device</th>
+	 <th>Domaine</th>
+	 <th>Mesure</th>
+	 <th>Unite</th>
+	 <th>Localisation</th>
+	  <th>latitude</th>
+	 <th>longitude</th>
+	</tr>
+
+<tr *ngFor= "let device of devices" > 
+
+<td>
+{{device.nom}}
+</td>
+<td>
+{{device.domaine}}
+</td>
+<td>
+{{device.mesure}}
+</td>
+<td>
+{{device.mesureUnite}}
+</td>
+<td >
+{{device.location}}
+</td>
+<td >
+{{device.lat}}
+</td>
+<td >
+{{device.longitude}}
+</td>
+</tr>
+</table>
+	
+</html>
+	
+

@@ -20,6 +20,7 @@ import { TemperatureComponent } from './temperature/temperature.component';
     ObjetComponent,
     DomotiqueComponent,
     TemperatureComponent
+   
  
  
   ],

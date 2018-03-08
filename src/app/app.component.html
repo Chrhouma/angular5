@@ -8,7 +8,7 @@
 <agm-map [latitude]="lat" [longitude]="lng">
 
 
-  <agm-marker *ngFor= "let device of devices"[latitude]="device.latitude" [longitude]="device.longitude" [title]="device.nom"></agm-marker>
+  <agm-marker *ngFor= "let device of devices"[latitude]="device.lat" [longitude]="device.longitude" [title]="device.nom"></agm-marker>
  
 <!--   <agm-marker class="mapMarker" *ngFor="let device of devices;"  [latitude]="device.latitude" [longitude]="device.longitude" [iconUrl]="'/src/assets/arrow2.png'" [title]="device.name"> -->
   

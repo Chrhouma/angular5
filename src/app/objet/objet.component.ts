@@ -16,7 +16,7 @@ export class ObjetComponent implements OnInit {
     //  this._data.goal.subscribe(res => this.goals = res);
     this.httpClient.get('http://localhost:8080/projet_WOT/objets/humidity/')
       .subscribe(devices => {
-        console.log(devices);
+       console.log(devices);
         this.devices = devices
       }
       );

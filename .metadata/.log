@@ -1,0 +1,46 @@
+!SESSION 2018-03-13 22:18:35.452 -----------------------------------------------
+eclipse.buildId=17.0.0.CI-AI-011a
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product com.genuitec.eclipse.modernweb.angular2.ui.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.genuitec.eclipse.modernweb.angular2.ui.product
+
+!ENTRY org.eclipse.ui 2 0 2018-03-13 22:22:59.620
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-03-13 22:22:59.620
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2018-03-13 22:23:01.435
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2018-03-13 22:23:01.490
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-03-13 22:23:04.652
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\RHOUMA'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.startup 4 0 2018-03-13 22:23:07.113
+!MESSAGE Failed to execute operation
+!STACK 0
+java.lang.RuntimeException: Property not located:IProjectCreationPropertiesNew.PROJECT_LOCATION
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.checkValidPropertyName(DataModelImpl.java:100)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.getOwningDataModel(DataModelImpl.java:105)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.getProperty(DataModelImpl.java:126)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.getStringProperty(DataModelImpl.java:153)
+	at com.genuitec.eclipse.modernweb.angular2.ui.commands.NewProjectCommandsHolder.getLocation(NewProjectCommandsHolder.java:117)
+	at com.genuitec.eclipse.modernweb.angular2.ui.commands.NewProjectCommandsHolder.updateCommands(NewProjectCommandsHolder.java:91)
+	at com.genuitec.eclipse.modernweb.angular2.ui.commands.NewProjectCommandsHolder.generateCommands(NewProjectCommandsHolder.java:44)
+	at com.genuitec.eclipse.modernweb.angular2.ui.startup.AngularDataModelProvider.init(AngularDataModelProvider.java:95)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.init(DataModelImpl.java:71)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.<init>(DataModelImpl.java:56)
+	at org.eclipse.wst.common.frameworks.datamodel.DataModelFactory.createDataModel(DataModelFactory.java:131)
+	at com.genuitec.eclipse.modernweb.angular2.ui.startup.NewAngularProjectStartupOperationHandler.execute(NewAngularProjectStartupOperationHandler.java:32)
+	at com.genuitec.eclipse.startup.operation.StartupOperationsExecutor.execute(StartupOperationsExecutor.java:412)
+	at com.genuitec.eclipse.startup.operation.StartupOperationsExecutor.access$2(StartupOperationsExecutor.java:396)
+	at com.genuitec.eclipse.startup.operation.StartupOperationsExecutor$1.run(StartupOperationsExecutor.java:214)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

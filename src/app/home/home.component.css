@@ -15,19 +15,22 @@
 input.txt {
 	border: 0;
 	padding: 1em;
-	width: 80%;
+	width:30%;
 	margin-bottom:  2em;
+	border-radius: 5px;
 }
 select.col1{
 	padding: .4em 1.3em;
 	margin-bottom:  2em;
-	
+	border-radius: 5px;
+	 height: 42px;
 }
 input.btn {
-	margin-right: 150px;
+	margin-right: 50px;
 	border: 0;
-	display: block;
-	padding: 1em 3em;
+/* 	display: block; */
+	border-radius: 5px;
+	padding: 1em 1em;
 	background: #A5F883;
 	color: #003A61;
 	margin-bottom:  1em;

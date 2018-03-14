@@ -11,6 +11,7 @@ import { DataService } from './data.service';
 import { DomotiqueComponent } from './domotique/domotique.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TemperatureComponent } from './temperature/temperature.component';
+import { SonComponent } from './son/son.component';
 
 
 @NgModule({
@@ -19,10 +20,11 @@ import { TemperatureComponent } from './temperature/temperature.component';
     HomeComponent,
     ObjetComponent,
     DomotiqueComponent,
-    TemperatureComponent
-   
- 
- 
+    TemperatureComponent,
+    SonComponent
+
+
+
   ],
   imports: [
     HttpClientModule,

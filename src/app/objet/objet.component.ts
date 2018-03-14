@@ -14,7 +14,7 @@ export class ObjetComponent implements OnInit {
   constructor(private httpClient: HttpClient, private route: ActivatedRoute, private router: Router) {}
   ngOnInit() {
     //  this._data.goal.subscribe(res => this.goals = res);
-    this.httpClient.get('http://localhost:8080/projet_WOT/objets/humidity/')
+    this.httpClient.get('http://localhost:8080/projet_WOT/objets/')
       .subscribe(devices => {
        console.log(devices);
         this.devices = devices

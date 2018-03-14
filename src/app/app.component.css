@@ -1,4 +1,65 @@
+
 agm-map {
-  height: 300px;
- 
+  height: 500px;
+
 }
+.frm_recherche{
+    border: 1px solid #fff;
+    padding: 5px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.frm_recherche table{
+   margin: auto;
+}
+.container {
+	display: grid;
+	grid-template-columns: 50% auto;
+}
+.col {
+	padding: .4em 1.3em;
+}
+.img {
+  width: 500px;
+
+}
+
+/* .color-dark { */
+/* 	background: #2885C4; */
+/* } */
+/* .color-light{ */
+/* 	background: #57B3F1; */
+/* 	fixed: none; */
+/* } */
+input.txt {
+	border: 0;
+	padding: 1em;
+	width:30%;
+	margin-bottom:  2em;
+	border-radius: 5px;
+}
+select.col1{
+	padding: .4em 1.3em;
+	margin-bottom:  2em;
+	border-radius: 5px;
+	 height: 42px;
+}
+input.btn {
+	margin-right: 50px;
+	border: 0;
+/* 	display: block; */
+	border-radius: 5px;
+	padding: 1em 1em;
+	background: #A5F883;
+	color: #003A61;
+	margin-bottom:  1em;
+	cursor:pointer;
+}
+/* .life-container { */
+/* 	background: #3FA0E1; */
+/* 	padding: .5em; */
+/* 	font-weight: bold; */
+/* 	cursor: pointer; */
+/* } */

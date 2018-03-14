@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, RouterLink } from '@angular/router';
 
 import {HomeComponent} from './home/home.component';
 import {ObjetComponent} from './objet/objet.component';
 import {DomotiqueComponent} from './domotique/domotique.component';
 import {TemperatureComponent} from './temperature/temperature.component';
+import {SonComponent} from './son/son.component';
 const routes: Routes = [
   {
     path: '',
@@ -12,7 +13,7 @@ const routes: Routes = [
   },
    {
     path: 'objets',
-    component: ObjetComponent
+    component: ObjetComponent,
   },
    {
     path: 'domotique',
@@ -21,6 +22,10 @@ const routes: Routes = [
     {
     path: 'objets/temperature',
      component: TemperatureComponent
+   },
+    {
+    path: 'objets/son',
+     component: SonComponent
    }
 ];
 

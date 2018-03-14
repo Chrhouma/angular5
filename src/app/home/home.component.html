@@ -1,49 +1,41 @@
-<html>
-<meta charset="UTF-8">
-<div class="container color-dark">
-	<div class="col">
-		<p> Find Device </p>
-	</div>
-	<div class="col">
-		<p> Domaines({{itemCount}})</p>
-	</div>
-</div>
+<!-- <html> -->
+<!-- <meta charset="UTF-8"> -->
+
+<!-- <div class="container color-light" [@goals]="goals.length"> -->
+<!-- 	<div class="col"> -->
+<!-- 		<p class="sm">us this form to find devices</p> -->
+<!-- 		<form> -->
+<!-- 			<input type="text" class="txt" name="item" placeholder="name" -->
+<!-- 				[(ngModel)]="goaltext"> <select class="col1" -->
+<!-- 				name="menu_typeDemesure" (change)="selectTypeMesure($event)"> -->
+<!-- 				<option>-ALL-</option> -->
+<!-- 				<option>temperature</option> -->
+<!-- 				<option>son</option> -->
+<!-- 				<option>Humidite</option> -->
+<!-- 				<option>Poussière</option> -->
+<!-- 				<option>Lumière</option> -->
+<!-- 			</select> <select class="col1" name="menu_typeDemesure" -->
+<!-- 				(change)="selectTypeMesure($event)"> -->
+<!-- 				<option *ngFor="let domaine of goals;">{{ domaine }}</option> -->
+
+<!-- 			</select> <input type="submit" class="btn" [value]="btnText" -->
+<!-- 				(click)="searchBytemperature()"> -->
+<!-- 		</form> -->
+<!-- 	</div> -->
+<!-- 	<div class="col">ici metrre une annimation pour les domaines</div> -->
+<!-- </div> -->
+<!-- <div class=" container color-dark"> -->
+
+<!-- 	<div class="col">ici affichage des resultats de devices</div> -->
 
 
-
-<div class="container color-light" [@goals]="goals.length">
-	<div class="col">
-		<p class="sm"> us this form to find devices</p>
-		
-		<form>
-		
-		<input type="text" class="txt" name="item" placeholder="name"[(ngModel)]="goaltext">
-		
-	  		<select class="col1" name="menu_typeDemesure">
-	  			 <option>-ALL-</option>
-         		 <option>Température</option>
-         		 <option>Son</option>
-         		 <option >Humidité</option>
-         		 <option >Poussière</option>
-         		 <option >Lumière</option>
-     		</select>
- 
+<!-- 	<div class="col"> -->
 	
-		<input type="submit" class="btn" [value]="btnText" (click)="searchBytemperature()">
-		</form>
+<!-- <!--    mapp ici --> 
 	
-	</div>
-	
-	<div class="col">
-		<p class="life-container" *ngFor="let goal of goals; let i=index"(click)="gotoPage(i)"> 
-		 {{ goal }}
-		
-		</p>
-	</div>
-	
-	
-	
+<!-- 	</div> -->
 
 
-</div>
-</html>
+<!-- </div> -->
+
+<!-- </html> -->

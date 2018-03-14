@@ -1,24 +1,130 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<html>
-<meta charset="UTF-8">
+
+<div class="row">
+<div class="hoja col-md-6 col">web Of things</div>
+<div class="col-md-6 col"> 
+
+
+
+<a routerLink="">HOME</a>
+<a routerLink="objets">Devices</a></div>
+
+</div>
+
 <ul>
+<li></li>
+
+
+
 <li><a routerLink="">HOME</a></li>
 <li><a routerLink="objets">Devices</a></li>
 
+<div class = "container" [@goals]="goals.length">
+	<div class="col">
+		<p class="sm">us this form to find devices</p>
+		<form>
+			<input type="text" class="txt" name="item" placeholder="name"
+				[(ngModel)]="goaltext"> <select class="col1" name="menu_typeDemesure" (change)="selectTypeMesure($event)">
+				<option>-ALL-</option>
+				<option>temperature </option>
+				<option>son</option>
+				<option>Humidite</option>
+				<option>Poussière</option>
+				<option>Lumière</option>
+
+			</select>
+      <select class="col1" name="menu_Domaine">
+        <option routerLink="home">domotique</option>
+        <option>smart city </option>
+        <option>automobile</option>
+        <option>medical</option>
+        <option>e-sant</option>
+			</select>
+      <input type="submit" class="btn" [value]="btnText"
+				(click)="searchBytemperature()">
+		</form>
+	</div>
+	<div class="col">ici metrre une annimation pour les domaines
+  {{slecteType}}
+
+  </div>
+</div>
+<div class="container">
+
+	<div class="col">
+
+
+	<table class="rwd-table">
+	<tr>
+
+	 <th>Device</th>
+
+	 <th>Mesure</th>
+	 <th>Unite</th>
+	 <th>Localisation</th>
+	  <th>latitude</th>
+	 <th>longitude</th>
+	</tr>
+
+<tr *ngFor= "let device of devices" >
+
+<td>
+{{device.nom}}
+</td>
+<td>
+{{device.domaine}}
+</td>
+<td>
+{{device.mesure}}
+</td>
+<td>
+{{device.mesureUnite}}
+</td>
+<td >
+{{device.location}}
+</td>
+<td >
+{{device.lat}}
+</td>
+<td >
+{{device.longitude}}
+</td>
+</tr>
+</table>
+
+
+	</div>
+
+	<div class="col">
+<div>
 <agm-map [latitude]="lat" [longitude]="lng">
 
 
   <agm-marker *ngFor= "let device of devices"[latitude]="device.lat" [longitude]="device.longitude" [title]="device.nom"></agm-marker>
- 
-<!--   <agm-marker class="mapMarker" *ngFor="let device of devices;"  [latitude]="device.latitude" [longitude]="device.longitude" [iconUrl]="'/src/assets/arrow2.png'" [title]="device.name"> -->
-  
+
+<!--   <agm-marker class="mapMarker" *ngFor="let device of devices;"  [latitude]="device.latitude" [longitude]="device.longitude" [iconUrl]="'/src/assets/arrow2.png'" [title]="device.name">  -->
+
 </agm-map>
+</div>
+
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
 
 <!-- <li *ngFor= "let device of devices" >  -->
 <!--  latitude {{device.latitude}} -->
 <!--   longitude  {{device.longitude}} -->
 <!-- </li> -->
 </ul>
-
 <router-outlet></router-outlet>
-</html>
+
+
+

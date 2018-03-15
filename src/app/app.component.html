@@ -1,27 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div class="row">
-<div class="hoja col-md-6 col">web Of things</div>
-<div class="col-md-6 col"> 
+
+<div class="hoja col-md-6 col"><a routerLink="">Web Of Things</a></div>
+
+<div>
 
 
-
-<a routerLink="">HOME</a>
-<a routerLink="objets">Devices</a></div>
-
-</div>
-
-<ul>
-<li></li>
+<div class = "containersearch" [@goals]="goals.length" style="background-color: rgba(0,0,0,.6); ">
 
 
-
-<li><a routerLink="">HOME</a></li>
-<li><a routerLink="objets">Devices</a></li>
-
-<div class = "container" [@goals]="goals.length">
+	<li><a routerLink="">HOME</a></li>
+    <li><a routerLink="objets">Devices</a></li>
 	<div class="col">
-		<p class="sm">us this form to find devices</p>
+
+<!-- 		<p class="sm">us this form to find devices</p> -->
 		<form>
 			<input type="text" class="txt" name="item" placeholder="name"
 				[(ngModel)]="goaltext"> <select class="col1" name="menu_typeDemesure" (change)="selectTypeMesure($event)">
@@ -49,6 +41,8 @@
 
   </div>
 </div>
+</div>
+
 <div class="container">
 
 	<div class="col">
@@ -97,10 +91,12 @@
 
 	<div class="col">
 <div>
-<agm-map [latitude]="lat" [longitude]="lng">
+<agm-map [latitude]="lat" [longitude]="lng" [title]="oki">
 
 
-  <agm-marker *ngFor= "let device of devices"[latitude]="device.lat" [longitude]="device.longitude" [title]="device.nom"></agm-marker>
+<!--   <agm-marker *ngFor= "let device of devices"[latitude]=35.2667153 [longitude]=10.9227905951 [title]="95484735"></agm-marker> -->
+    <agm-marker  [latitude]="lat" [longitude]="lng" [title]="oki"></agm-marker>
+  
 
 <!--   <agm-marker class="mapMarker" *ngFor="let device of devices;"  [latitude]="device.latitude" [longitude]="device.longitude" [iconUrl]="'/src/assets/arrow2.png'" [title]="device.name">  -->
 
@@ -123,7 +119,7 @@
 <!--  latitude {{device.latitude}} -->
 <!--   longitude  {{device.longitude}} -->
 <!-- </li> -->
-</ul>
+<!-- </UL> -->
 <router-outlet></router-outlet>
 
 

@@ -17,6 +17,16 @@ agm-map {
 .container {
 	display: grid;
 	grid-template-columns: 50% auto;
+	padding-left:17%;
+	padding-top: 5%;
+	background-color: rgba(0,0,0,.6);
+
+}
+.containersearch {
+	display: grid;
+	padding-left: 15%;
+	padding-top: 2%;
+	grid-template-columns: 50% auto; 
 }
 .col {
 	padding: .4em 1.3em;

@@ -10,9 +10,9 @@ import {_document} from '@angular/platform-browser/src/browser';
 })
 
 export class AppComponent implements OnInit {
-  lat: number = 51.678418;
-  lng: number = 7.809007;
-  title = 'app';
+  lat: number = 15.2667153;
+  lng: number = 17.9227905951;
+  oki:  string = '0021695484735';
  devices: any;
   goaltext: string = 'find by name';
   goals = [];

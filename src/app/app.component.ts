@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   lng: number = 17.9227905951;
   oki:  string = '0021695484735';
  devices: any;
-  goaltext: string = 'find by name';
+  goaltext: string = '';
   goals = [];
   slecteType: string = '';
     btnText: string = 'Search';

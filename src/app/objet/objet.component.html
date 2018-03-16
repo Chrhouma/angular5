@@ -1,14 +1,10 @@
 <html>
 <meta charset="UTF-8">
-<p> 
-
-All Devices. <a href="" (click)="sendMeHome()"><strong>Take me back</strong></a>
-</p>
-
 
 
 <table class="rwd-table">
-	<tr>
+
+<tr>
 	 
 	 <th>Device</th>
 	 <th>Domaine</th>
@@ -18,32 +14,48 @@ All Devices. <a href="" (click)="sendMeHome()"><strong>Take me back</strong></a>
 	  <th>latitude</th>
 	 <th>longitude</th>
 	</tr>
+	</table>
+<div class="madiv" style= "height: 350pt; overflow:auto; ">
 
-<tr *ngFor= "let device of devices" > 
+<table class="rwd-table">
+	
 
-<td>
-{{device.nom}}
-</td>
-<td>
-{{device.domaine}}
-</td>
-<td>
-{{device.mesure}}
-</td>
-<td>
-{{device.mesureUnite}}
-</td>
-<td >
-{{device.location}}
-</td>
-<td >
-{{device.lat}}
-</td>
-<td >
+
+
+
+<tr *ngFor= "let device of objets" > 
+
+		<td >
+		{{device.nom}}
+		</td>
+		<td>
+		{{device.domaine}}
+		</td>
+		<td>
+		{{device.mesure}}
+		</td>
+		<td>
+		{{device.mesureUnite}}
+		</td>
+		<td >
+		{{device.location}}
+		</td>
+		<td >
+		{{device.lat}}
+		</td>
+		<td >
 {{device.longitude}}
 </td>
 </tr>
 </table>
+</div> 
+
+
+
+
+
+
+
 	
 </html>
 	

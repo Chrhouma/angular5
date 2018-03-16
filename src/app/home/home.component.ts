@@ -32,7 +32,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 itemCount: number = 4;
   btnText: string = 'Search';
-  goaltext: string = 'find by name';
+  goaltext: string = '';
   goals = [];
   slecteType: string = '';
   

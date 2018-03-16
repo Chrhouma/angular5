@@ -15,6 +15,7 @@ agm-map {
    margin: auto;
 }
 .container {
+	margin: 0;
 	display: grid;
 	grid-template-columns: 50% auto;
 	padding-left:17%;
@@ -30,6 +31,7 @@ agm-map {
 }
 .col {
 	padding: .4em 1.3em;
+	dispaly: flex;
 }
 .img {
   width: 500px;

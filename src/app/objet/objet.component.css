@@ -1,7 +1,8 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:300,400,700";
 .rwd-table {
-  margin: 1em 0;
-  min-width: 300px;
+  margin:  0;
+ min-width: 300px;
+  width:50 px;
 }
 .rwd-table tr {
   border-top: 1px solid #ddd;
@@ -10,8 +11,12 @@
 .rwd-table th {
   display: none;
 }
+.headTable {
+	position : fixed;
+}
 .rwd-table td {
   display: block;
+
 }
 .rwd-table td:first-child {
   padding-top: .5em;
